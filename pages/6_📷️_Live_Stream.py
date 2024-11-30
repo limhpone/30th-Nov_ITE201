@@ -51,18 +51,13 @@ def out_recorder_factory() -> MediaRecorder:
 
 
 ctx = webrtc_streamer(
-    key="Squats-pose-analysis",
-    video_frame_callback=video_frame_callback,
-    rtc_configuration={
-        "iceServers": [
-            {"urls": ["stun:stun1.l.google.com:19302", "stun:stun2.l.google.com:19302"]}
-        ]
-    },  # Updated STUN server configuration
-    media_stream_constraints={"video": {"width": {"min": 480, "ideal": 480}}, "audio": False},
-    video_html_attrs=VideoHTMLAttributes(autoPlay=True, controls=False, muted=False),
-    out_recorder_factory=out_recorder_factory
-)
-
+                        key="Squats-pose-analysis",
+                        video_frame_callback=video_frame_callback,
+                        rtc_configuration={"iceServers": [{"urls": ["stun:stun.l.google.com:19302"]}]},  # Add this config
+                        media_stream_constraints={"video": {"width": {'min':480, 'ideal':480}}, "audio": False},
+                        video_html_attrs=VideoHTMLAttributes(autoPlay=True, controls=False, muted=False),
+                        out_recorder_factory=out_recorder_factory
+                    )
 
 
 download_button = st.empty()
@@ -83,6 +78,9 @@ if os.path.exists(output_video_file) and st.session_state['download']:
 
 
     
+
+
+
     
 
 
