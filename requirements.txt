@@ -1,6 +1,6 @@
 numpy
 opencv-python-headless
-mediapipe
+mediapipe>=0.10.0
 streamlit_lottie
 streamlit_webrtc
 streamlit
@@ -10,6 +10,6 @@ plotly
 pydataset
 streamlit-extras
 av
-aiortc
-pysoundfile
-tensorflow
+aiortcaiortc==1.4.0
+pysoundfilepysoundfile
+tensorflow>=2.10.0,<2.12.0
