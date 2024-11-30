@@ -1,6 +1,5 @@
 import av
 import os
-os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import sys
 import streamlit as st
 from streamlit_webrtc import VideoHTMLAttributes, webrtc_streamer
@@ -83,6 +82,7 @@ if os.path.exists(output_video_file) and st.session_state['download']:
     download_button.empty()
 
 
+    
     
 
 
