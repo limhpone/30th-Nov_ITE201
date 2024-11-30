@@ -1,5 +1,6 @@
 import av
 import os
+os.environ['TF_CPP_MIN_LOG_LEVEL'] = '2'
 import sys
 import streamlit as st
 from streamlit_webrtc import VideoHTMLAttributes, webrtc_streamer
