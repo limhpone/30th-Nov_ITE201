@@ -1,4 +1,4 @@
-numpy
+numpy<2.0
 opencv-python-headless
 mediapipe>=0.10.0
 streamlit_lottie
@@ -10,8 +10,7 @@ plotly
 pydataset
 streamlit-extras
 pysoundfile
-tensorflow>=2.10.0,<2.12.0  # Use full TensorFlowtensorflow>=2.10.0,<2.12.0  # Use full TensorFlow
-# Uncomment below line if using TensorFlow Lite only# Uncomment below line if using TensorFlow Lite only
+tensorflow>=2.10.0,<2.12.0
 tflite-runtime==2.11.0
 aiortc>=1.4.0
 aioice>=0.7.0
