@@ -5,7 +5,6 @@ import sys
 import streamlit as st
 from streamlit_webrtc import VideoHTMLAttributes, webrtc_streamer
 from aiortc.contrib.media import MediaRecorder
-import tensorflow as tf
 
 
 BASE_DIR = os.path.abspath(os.path.join(__file__, '../../'))
